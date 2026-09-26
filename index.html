@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <!-- やま書士SNSインサイトのサイト版。原本はGASのダッシュボードで、このページはそれをそのまま表示する入り口。
+       GASのウェブアプリはホーム画面用アイコンを指定できないため、ここでアイコンと名前を設定している。
+       本人専用ページなので検索エンジンには載せない -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>やま書士インサイト</title>
+  <meta name="apple-mobile-web-app-title" content="やま書士インサイト">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#f4f6fb">
+  <link rel="apple-touch-icon" href="images/icon-180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { margin: 0; height: 100%; background: #f4f6fb; overflow: hidden; }
+    /* ホーム画面から開いたとき、iPhoneの上下の欄(ノッチ・ホームバー)に隠れないよう余白を取る */
+    iframe {
+      position: fixed; inset: 0; width: 100%; height: 100%; border: 0; box-sizing: border-box;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      background: #f4f6fb;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbxVhUovgfOagwXHdRh6LaHdDQ-2aRUsRl-qIBL0voXDI9Zic0vsGFrdEBnSQTXFs054/exec"
+    title="やま書士SNSアカウント総合インサイトダッシュボード"></iframe>
+</body>
+</html>
